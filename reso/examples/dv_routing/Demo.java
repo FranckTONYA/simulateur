@@ -67,10 +67,10 @@ public class Demo {
 	
 	public static void main(String [] args) {
 		try {
-            String filename= "reso/data/topology.txt";
+            String filename= "reso/data/demo-graph.txt";
             AbstractScheduler scheduler= new Scheduler();
             Network network= NetworkBuilder.loadTopology(filename, scheduler);
-            setupRoutingProtocol(network, "R2");
+            setupRoutingProtocol(network, "A");
                 
             // Run simulation -- first convergence
             scheduler.run();
